@@ -1,6 +1,7 @@
 import random
 import functions
 
+# ASCII art of a pirate treasure box
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -24,19 +25,30 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 
+# Introduction to the game
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
+# Define available directions
 directions = ["left", "right"]
+
+# Randomly choose the correct direction to reach the treasure
 right_direction = random.choice(directions)
+
+# Ask the user to choose a direction
 direction = input("You're at a cross road. Where do you want to go? Type \"left\" or \"right\"\n").strip().lower()
 
+# Check if the user chose the right direction
 if direction == right_direction:
+    # Ask the user if they want to wait for a boat or swim across a lake
     lake_decision = input("You've come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait "
                           "for a boat. Type \"swim\" to swim across\n").strip().lower()
+    # Call a function to handle the user's decision
     functions.cross_road(lake_decision)
+    # Call a function to continue the game
     functions.house()
 
+# If the user didn't choose the right direction, end the game
 elif direction not in directions:
     print("You chose an invalid option. Game Over.")
 else:
