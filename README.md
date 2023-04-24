@@ -1,5 +1,5 @@
 # Treasure-Island
-Welcome to Treasure Island, a fun text-based adventure game where you can test your decision-making skills! In this game, you will navigate a series of decision points and try to find the treasure hidden on an island. Be careful - one wrong move and you could end up in a dangerous situation!
+Welcome to Treasure Island, a fun text-based adventure game where you can test your decision-making skills! In this game, you will navigate a series of decision points and try to find the treasure hidden on an island. Be careful - one wrong move and you could end up in a dangerous situation!.
 
 # How to Play
 1. Clone this repository to your local machine
